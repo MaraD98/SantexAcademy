@@ -1,0 +1,133 @@
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgb(32,27,36);
+}
+
+p {
+    margin-right: 3em;
+    font-weight: bold;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+button {
+    background-color: white;
+    border-radius: 30px;
+    padding: 0px 1.5em;
+    height: 2.9em;
+    border: 2px solid black;
+    font-size: 0.8em;
+    width: 8em;
+    margin-right: 3em;
+}
+
+#navbar{
+    display: flex; 
+    border-bottom: 1px solid gray; 
+    padding: 20px 20px; 
+    justify-content: space-between;
+    background: white;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+div#navbar-left img {
+    width: 9em;
+}
+
+#navbar-redes{
+    text-align: center;
+    padding: inherit;
+}
+
+#navbar-redes img{
+    display: inline-block;
+    width: 0.8em;
+    margin-right: 0.9em;
+}
+
+
+
+/* Aca termina todo lo del navbar y empieza la intro */
+
+#intro{
+    
+    margin: 11em 17em;
+    
+    text-align: justify;
+    
+}
+
+/*
+no se alineaaaaaaaaaaaaaaaa  el pinche botoooooon
+
+*/
+
+#intro p{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+aca sigue IMPACTO
+
+*/
+
+#impacto{
+    display: flex;
+    padding: 20px 20px; 
+    justify-content: space-evenly;
+    background: #201b24;
+    color: white;
+}
+
+#impac-left{
+    
+    width: 16em;
+    font-size: 19px;
+    margin-right: 3em;
+}
+
+#impac-right{
+    
+    width: 12em;
+    font-size: 29px;
+    padding: 142px 0px 0px 0px;
+    display: flex;
+
+}
+
+#impac-right p{
+    color: #8c939c;
+    font-size: 15px;
+    margin: 0;
+}
+#impac-right h1{
+    margin: 0;
+}
+#impac-right h4{
+    vertical-align: middle;
+    font-size: 30px;
+    color: #6B53F0;
+    margin: 16px 0px 0px 15px;
+}
+
+/*RESPONSIVE*/
+
+
+@media (width >=2500px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+@media (width >=3500px) {
+    html {
+        font-size: 32px;
+    }
+}
