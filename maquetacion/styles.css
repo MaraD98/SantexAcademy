@@ -1,52 +1,60 @@
 html {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    color: rgb(32,27,36);
+    color: #201b24;
 }
 
 p {
     margin-right: 3em;
     font-weight: bold;
     font-size: 0.85em;
-    font-weight: 500;
+    color: #201b24;
+    font-weight: 400;
+    line-height: 21px;
 }
 
 button {
     background-color: white;
     border-radius: 30px;
     padding: 0px 1.5em;
-    height: 2.9em;
-    border: 2px solid black;
+    border: 2px solid #201b24;
     font-size: 0.8em;
-    width: 8em;
+    height: 3em;
+    width: 9em;
     margin-right: 3em;
+    color: #201b24;
 }
 
-#navbar{
-    display: flex; 
-    border-bottom: 1px solid gray; 
-    padding: 20px 20px; 
+#navbar {
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding: 19px 23px 20px 20px;
     justify-content: space-between;
     background: white;
     top: 0px;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
+    line-height: 21px;
 }
 
-
-div#navbar-left img {
-    width: 9em;
+#navbar p {
+    font-weight: 500;
 }
 
-#navbar-redes{
+#navbar-left img {
+    width: 9.7em;
+    padding-left: 14px;
+}
+
+#navbar-redes {
     text-align: center;
     padding: inherit;
 }
 
-#navbar-redes img{
+#navbar-redes img {
     display: inline-block;
-    width: 0.8em;
+    width: 0.85em;
     margin-right: 0.9em;
 }
 
@@ -54,23 +62,41 @@ div#navbar-left img {
 
 /* Aca termina todo lo del navbar y empieza la intro */
 
-#intro{
-    
-    margin: 11em 17em;
-    
-    text-align: justify;
-    
+#container-intro {
+    padding: 140px 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*
-no se alineaaaaaaaaaaaaaaaa  el pinche botoooooon
+#intro {
+    width: 50%;
+    height: 50%;
+}
 
-*/
-
-#intro p{
-    font-size: 2em;
-    font-weight: bold;
+#intro h1 {
     text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#botones {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#botones button {
+    text-align: center;
+    width: 12em;
+    font-weight: 400;
+    margin-right: 25px;
+}
+
+#boton-color button {
+    width: 8.5em;
+    border: 2px solid #6b53f0;
+    color: #6b53f0;
 }
 
 /*
@@ -78,43 +104,112 @@ aca sigue IMPACTO
 
 */
 
-#impacto{
+#impacto {
     display: flex;
-    padding: 20px 20px; 
+    padding: 120px 30px 125px;
     justify-content: space-evenly;
     background: #201b24;
     color: white;
 }
 
-#impac-left{
-    
-    width: 16em;
-    font-size: 19px;
-    margin-right: 3em;
+#impacto h1 {
+    margin: 0;
+
+    margin-right: 30px;
+
 }
 
-#impac-right{
-    
-    width: 12em;
+#impac-left {
+
+    width: 23em;
+    font-size: 19px;
+    padding-left: 100px;
+}
+
+#impac-left p {
+    color: white;
+}
+
+#impac-right {
+
+    width: 16em;
     font-size: 29px;
-    padding: 142px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
     display: flex;
 
 }
 
-#impac-right p{
+#impac-right p {
     color: #8c939c;
     font-size: 15px;
     margin: 0;
 }
-#impac-right h1{
-    margin: 0;
-}
-#impac-right h4{
+
+#impac-right h4 {
     vertical-align: middle;
     font-size: 30px;
     color: #6B53F0;
     margin: 16px 0px 0px 15px;
+}
+
+/*IMAGEN FANTASMA */
+
+#imagen-fantasma {
+
+    background-image: url(img/twp-home.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*PROGRAMAS voy a poner algunas cosas en px para que no se modifiquen y em para que se adapten*/
+
+#programas {
+    padding: 90px 30px;
+}
+
+
+#programas p {
+    font-size: 14px;
+    margin-block-end: 20px;
+}
+
+
+#programas-1 {
+    display: inline-flex;
+}
+
+#programas-1 img {
+    width: 50%;
+    border-radius: 0px 47px 47px;
+    padding-top: 20px;
+}
+
+#programas-xacademy {
+    padding: 67px 0px 0px 100px;
+}
+
+
+#programas-xacademy img {
+    width: 15em;
+    margin-bottom: auto;
+}
+
+#programas-2 {
+    padding: 1em;
+    display: inline-flex;
+}
+
+#programas-2 img {
+    width: 88%;
+    border-radius: 47px 47px 0px;
+}
+
+#programas-robotica {
+    padding: 4em 0em 0em 3em;
 }
 
 /*RESPONSIVE*/
